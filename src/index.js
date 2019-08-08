@@ -1,6 +1,13 @@
 import React from 'react'
 import {render} from 'react-dom';
-import App from './App'
+import './css/style.css'
 
+const Root = () => {
+    return(
+        <div>
+            <h3>Hello</h3>
+        </div>
+    )
+}
 
-render(<App/> , document.querySelector('#root'))
+render(<Root/> , document.querySelector('#root'))
