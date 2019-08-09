@@ -1,8 +1,8 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import App from './App'
-import StorePicker from './components/StorePicker'
-import NotFound from './components/NotFound';
+import StorePicker from './StorePicker'
+import NotFound from './NotFound';
 
 const Path = () => {
     return(
@@ -10,7 +10,7 @@ const Path = () => {
             <div>
                 <Switch>
                     <Route exact path="/" component={StorePicker}/>
-                    <Route  path="/store/storeId" component={App}/>
+                    <Route path="/store/:storeId" component={App} />
                     <Route  component={NotFound}/>
                 </Switch>
             </div>

@@ -2,7 +2,6 @@ import React from 'react'
 import {render} from 'react-dom';
 import './css/style.css'
 
-import App from './App';
+import Path from './components/Path'
 
-
-render(<App/> , document.querySelector('#root'))
+render(<Path/> , document.querySelector('#root'))

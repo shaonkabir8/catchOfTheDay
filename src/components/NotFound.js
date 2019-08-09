@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-function NotFound(location) {
+function NotFound({location}) {
     return (
         <div className="not-found">
-            <h1>No Page Found as {location.path}</h1>
+            <h1>No Page Found as {location.pathname}</h1>
         </div>
     )
 }
