@@ -2,12 +2,7 @@ import React from 'react'
 import {render} from 'react-dom';
 import './css/style.css'
 
-const Root = () => {
-    return(
-        <div>
-            <h3>Hello</h3>
-        </div>
-    )
-}
+import App from './App';
 
-render(<Root/> , document.querySelector('#root'))
+
+render(<App/> , document.querySelector('#root'))
