@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import {getFunName} from '../helpers'
+
 class StorePicker extends Component {
 
     // Search Handler
@@ -16,7 +18,13 @@ class StorePicker extends Component {
         return (
             <form className="store-selector" onSubmit={(e) => this.searchStore(e)}>
                 <h2>Enter a Shop Name</h2>
-                <input type="text" placeholder="Store Name" ref={(input) => {this.textField = input}}/>
+                
+                <input
+                    type="text"
+                    placeholder="Store Name"
+                    ref={(input) => {this.textField = input}}
+                    defaultValue={getFunName()} 
+                />
                 <button type="submit">Search for Store</button>
             </form>
         )
