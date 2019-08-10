@@ -9,12 +9,12 @@ import SampleFishes from '../sample-fishes'
 class App extends React.Component{
   // binding methods for using everywhere
   loadFish = this.loadFish.bind(this)
+  addFish = this.addFish.bind(this)
 
   state = {
     fishes: {},
     order: {}
   }
-
 
   loadFish() {
     this.setState({
@@ -22,6 +22,16 @@ class App extends React.Component{
     })
   }
 
+  addFish(fish) {
+    // copying the existing state
+    const fishes = {...this.state.fishes}
+    // genetating Unique ID
+    const timeTamp = Date.now()
+    // to send data , creating a format
+    fishes[`fish-${timeTamp}`] = fish
+    // update state
+    this.setState({ fishes })
+  }
 
 
   render() {
@@ -37,7 +47,10 @@ class App extends React.Component{
             </ul>
         </div>
         <Order/>
-        <Inventory loadFish={this.loadFish}/>
+        <Inventory
+          loadFish={this.loadFish}
+          addFish={this.addFish}
+        />
       </div>
     )
   }
