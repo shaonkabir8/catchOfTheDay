@@ -3,7 +3,7 @@ import {formatPrice} from '../helpers'
 
 class Fish extends React.Component{
     render() {
-        const {item} = this.props;
+        const {item, serial,addToCart} = this.props;
         const isAvilable = item.status === 'available'
         const btnText = isAvilable ? 'Add to Cart' : 'Sold Out'
         return(
@@ -14,7 +14,7 @@ class Fish extends React.Component{
                     <span className="price">{formatPrice(item.price)}</span>
                 </h3>
                 <p>{item.desc}</p>
-                <button disabled={!isAvilable}>{btnText}</button>
+                <button onClick={() => addToCart(serial)} disabled={!isAvilable}>{btnText}</button>
             </li>
         )
     }
