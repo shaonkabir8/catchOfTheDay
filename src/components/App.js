@@ -10,6 +10,7 @@ class App extends React.Component{
   // binding methods for using everywhere
   loadFish = this.loadFish.bind(this)
   addFish = this.addFish.bind(this)
+  updateFish = this.updateFish.bind(this)
   addToCart = this.addToCart.bind(this)
 
   // our state
@@ -37,6 +38,15 @@ class App extends React.Component{
     this.setState({ fishes })
   }
 
+  // update Fish method
+  updateFish(key,updatedFish) {
+    // copying extisting state
+    const fishes = {...this.state.fishes};
+    // formating structure
+    fishes[key] = updatedFish;
+    // update state
+    this.setState({ fishes })
+  }
 
   // Add_To_Cart method to update order status
   addToCart(key) {
@@ -70,6 +80,8 @@ class App extends React.Component{
         <Inventory
           loadFish={this.loadFish}
           addFish={this.addFish}
+          updateFish={this.updateFish}
+          fishes = {this.state.fishes}
         />
       </div>
     )
