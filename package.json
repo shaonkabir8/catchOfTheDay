@@ -5,11 +5,11 @@
   "dependencies": {
     "firebase": "^6.3.5",
     "prop-type": "0.0.1",
+    "re-base": "^4.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
-    "rebase": "^0.3.0"
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
