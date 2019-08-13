@@ -629,3 +629,28 @@ input[type=submit].twitter:after {
   text-align: center;
   font-size: 3rem;
 }
+
+
+.not-found {
+	background-image: url(/images/not-found.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 630px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+}
+
+/* Not Found Page Design */
+.not-found h1 {
+	position: absolute;
+	z-index: 1;
+	color: #090000;
+	left: 13%;
+	bottom: 27%;
+	background: #fff;
+	padding: 20px 166px;
+	border-radius: 5px;
+}
+.not-found h1 span {
+	font-weight: 700;
+}
