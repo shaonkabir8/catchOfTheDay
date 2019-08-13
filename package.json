@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^6.3.5",
+    "firebase-admin": "^8.3.0",
     "prop-type": "0.0.1",
     "re-base": "^4.0.0",
     "react": "^16.8.6",

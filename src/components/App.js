@@ -102,12 +102,13 @@ class App extends React.Component{
           <ul className="list-of-fishes">
               {
                 Object.keys(this.state.fishes)
-                .map(key => <Fish 
-                              key={key}
-                              item={this.state.fishes[key]}
-                              addToCart={this.addToCart}
-                              serial={key}
-                            />)
+                .map(key =>
+                  <Fish 
+                    key={key}
+                    item={this.state.fishes[key]}
+                    addToCart={this.addToCart}
+                    serial={key}
+                  />)
               }
             </ul>
         </div>
@@ -118,6 +119,7 @@ class App extends React.Component{
           updateFish={this.updateFish}
           fishes = {this.state.fishes}
           deleteFish={this.deleteFish}
+          storeId={this.props.match.params.storeId}
         />
       </div>
     )
