@@ -70,6 +70,10 @@ class App extends React.Component{
     this.setState({ order })
   }
 
+  // to display item even userers are logged in or not !
+  componentDidMount() {
+    this.loadFish()
+  }
 
   componentWillMount() {
     this.ref = base.syncState(`${this.props.match.params.storeId}/fishes` , {
