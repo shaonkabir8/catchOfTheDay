@@ -1,10 +1,12 @@
 {
   "name": "beginner_react",
+  "homepage": "https://Shaonkabir.github.io/catchOfTheDay",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "firebase": "^6.3.5",
     "firebase-admin": "^8.3.0",
+    "gh-pages": "^2.1.1",
     "prop-type": "0.0.1",
     "re-base": "^4.0.0",
     "react": "^16.8.6",
@@ -16,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
