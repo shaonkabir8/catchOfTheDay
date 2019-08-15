@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/catchOfTheDay/static/css/main.b55db1fc.chunk.css",
+    "main.js": "/catchOfTheDay/static/js/main.e4886fa5.chunk.js",
+    "main.js.map": "/catchOfTheDay/static/js/main.e4886fa5.chunk.js.map",
+    "runtime~main.js": "/catchOfTheDay/static/js/runtime~main.78d7a69a.js",
+    "runtime~main.js.map": "/catchOfTheDay/static/js/runtime~main.78d7a69a.js.map",
+    "static/js/2.6c726221.chunk.js": "/catchOfTheDay/static/js/2.6c726221.chunk.js",
+    "static/js/2.6c726221.chunk.js.map": "/catchOfTheDay/static/js/2.6c726221.chunk.js.map",
+    "index.html": "/catchOfTheDay/index.html",
+    "precache-manifest.7dd788277ce0c97707ef69a9e4a160c6.js": "/catchOfTheDay/precache-manifest.7dd788277ce0c97707ef69a9e4a160c6.js",
+    "service-worker.js": "/catchOfTheDay/service-worker.js",
+    "static/css/main.b55db1fc.chunk.css.map": "/catchOfTheDay/static/css/main.b55db1fc.chunk.css.map",
+    "static/media/style.css": "/catchOfTheDay/static/media/haymaker-webfont.e9535f20.ttf"
+  }
+}
