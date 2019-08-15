@@ -1,5 +1,6 @@
 import React from 'react'
 import {formatPrice} from '../helpers'
+import {Redirect} from 'react-router-dom'
 
 class Order extends React.Component{
 
@@ -20,6 +21,23 @@ class Order extends React.Component{
                 <span className="price">{formatPrice(count * fish.price)}</span>
             </li>
         )
+    }
+
+    // Check Out Method
+    state = {
+        redirect: false
+    }
+    
+    CheckOut = () => {
+        this.setState({
+          redirect: true
+        })
+    }  
+    renderCheckOut = () => {
+        // it redirects when it state's value is true
+        if (this.state.redirect) {
+          return <Redirect to='/item/:storeId' />
+        }
     }
 
     render() {
@@ -43,6 +61,8 @@ class Order extends React.Component{
                     <li className="total">
                         <strong>Total:</strong>
                         {formatPrice(total)}
+                        {this.renderCheckOut()}
+                        <button onClick={this.CheckOut}>Check Out !</button>
                     </li>
                 </ul>
             </div>
