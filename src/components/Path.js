@@ -5,9 +5,11 @@ import StorePicker from './StorePicker'
 import NotFound from './NotFound';
 import FirstPage from './FirstPage';
 
+const repo = `/${window.location.pathname.split('/')[1]}`
+
 const Path = () => {
     return(
-        <Router>
+        <Router basename={repo}>
             <div>
                 <Switch>
                     <Route exact path="/" component={StorePicker}/>
